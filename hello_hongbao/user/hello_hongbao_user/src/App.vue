@@ -26,6 +26,7 @@
 
 <script>
   import { Tabbar, TabItem } from 'mint-ui';
+  import api from './axios/api'
 
 export default {
   name: 'App',
@@ -43,6 +44,7 @@ export default {
   },
   created(){
     this.selecte(this.$route.fullPath)
+//    api.Login();
   },
   watch:{
     selected(val,oldval){ /*监听tabBar进行页面跳转*/
